@@ -38,7 +38,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>GISS - Asistente Virtual</h1>
+        <h1>GISS - Asistente Virtual V2</h1>
         <p class="info">Bienvenido al asistente virtual de la Gerencia de Informática de la Seguridad Social</p>
         
         <div class="status">
@@ -47,25 +47,25 @@
         </div>
     </div>
 
-    <!-- Salesforce Embedded Messaging - ACTUALIZADO -->
+    <!-- Salesforce Embedded Messaging V2 -->
     <script type='text/javascript'>
         function initEmbeddedMessaging() {
             try {
                 embeddedservice_bootstrap.settings.language = 'es';
                 embeddedservice_bootstrap.init(
                     '00DJX00000DPVVl',
-                    'GISS_CHAT',
-                    'https://segsocial--datacloud.sandbox.my.site.com/ESWGISSCHAT1750934894930',
+                    'GISS_CHAT_V2',
+                    'https://segsocial--datacloud.sandbox.my.site.com/ESWGISSCHATV21750935468760',
                     {
                         scrt2URL: 'https://segsocial--datacloud.sandbox.my.salesforce-scrt.com'
                     }
                 );
-                console.log('Chat inicializado con configuración actualizada');
+                console.log('Chat V2 inicializado correctamente');
             } catch (err) {
                 console.error('Error loading Embedded Messaging: ', err);
             }
         };
     </script>
-    <script type='text/javascript' src='https://segsocial--datacloud.sandbox.my.site.com/ESWGISSCHAT1750934894930/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+    <script type='text/javascript' src='https://segsocial--datacloud.sandbox.my.site.com/ESWGISSCHATV21750935468760/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
