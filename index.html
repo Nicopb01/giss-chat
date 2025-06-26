@@ -47,25 +47,25 @@
         </div>
     </div>
 
-    <!-- Salesforce Embedded Messaging -->
+    <!-- Salesforce Embedded Messaging - ACTUALIZADO -->
     <script type='text/javascript'>
         function initEmbeddedMessaging() {
             try {
                 embeddedservice_bootstrap.settings.language = 'es';
                 embeddedservice_bootstrap.init(
                     '00DJX00000DPVVl',
-                    'GISS_Chat',
-                    'https://segsocial--datacloud.sandbox.my.site.com/ESWGISSChat1750865225437',
+                    'GISS_CHAT',
+                    'https://segsocial--datacloud.sandbox.my.site.com/ESWGISSCHAT1750934894930',
                     {
                         scrt2URL: 'https://segsocial--datacloud.sandbox.my.salesforce-scrt.com'
                     }
                 );
-                console.log('Chat inicializado');
+                console.log('Chat inicializado con configuración actualizada');
             } catch (err) {
                 console.error('Error loading Embedded Messaging: ', err);
             }
         };
     </script>
-    <script type='text/javascript' src='https://segsocial--datacloud.sandbox.my.site.com/ESWGISSChat1750865225437/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+    <script type='text/javascript' src='https://segsocial--datacloud.sandbox.my.site.com/ESWGISSCHAT1750934894930/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
