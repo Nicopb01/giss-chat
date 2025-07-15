@@ -50,21 +50,21 @@
     <script type='text/javascript'>
         function initEmbeddedMessaging() {
             try {
-                embeddedservice_bootstrap.settings.language = 'es';
+                embeddedservice_bootstrap.settings.language = 'es'; // Configuración de idioma
+
                 embeddedservice_bootstrap.init(
-                    '00D5t0000004ZRn', // Nuevo OrganizationId
-                    'Cita_Previa_INSS', // Nuevo canal DeveloperName
-                    'https://segsocial--devpro.sandbox.my.salesforce-scrt.com', // Nueva URL
+                    '00D5t0000004ZRn', // OrganizationId
+                    'WebChat_Cita_Previa', // DeveloperName del canal
+                    'https://segsocial--devpro.sandbox.my.site.com/ESWWebChatCitaPrevia1752570317184', // URL del canal
                     {
                         scrt2URL: 'https://segsocial--devpro.sandbox.my.salesforce-scrt.com'
                     }
                 );
-                console.log('Chat Cita Previa INSS inicializado correctamente');
             } catch (err) {
                 console.error('Error loading Embedded Messaging: ', err);
             }
         };
     </script>
-    <script type='text/javascript' src='https://segsocial--devpro.sandbox.my.salesforce-scrt.com/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+    <script type='text/javascript' src='https://segsocial--devpro.sandbox.my.site.com/ESWWebChatCitaPrevia1752570317184/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
