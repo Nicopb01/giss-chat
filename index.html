@@ -40,7 +40,6 @@
     <div class="container">
         <h1>GISS - Asistente Virtual V2</h1>
         <p class="info">Bienvenido al asistente virtual de la Gerencia de Informática de la Seguridad Social</p>
-        
         <div class="status">
             <p>El chat aparecerá en la esquina inferior derecha de la página.</p>
             <p>Si no aparece, espera unos segundos o recarga la página.</p>
@@ -53,19 +52,19 @@
             try {
                 embeddedservice_bootstrap.settings.language = 'es';
                 embeddedservice_bootstrap.init(
-                    '00DJX00000DPVVl',
-                    'GISS_CHAT_V2',
-                    'https://segsocial--datacloud.sandbox.my.site.com/ESWGISSCHATV21750935468760',
+                    '00D5t0000004ZRn', // Nuevo OrganizationId
+                    'Cita_Previa_INSS', // Nuevo canal DeveloperName
+                    'https://segsocial--devpro.sandbox.my.salesforce-scrt.com', // Nueva URL
                     {
-                        scrt2URL: 'https://segsocial--datacloud.sandbox.my.salesforce-scrt.com'
+                        scrt2URL: 'https://segsocial--devpro.sandbox.my.salesforce-scrt.com'
                     }
                 );
-                console.log('Chat V2 inicializado correctamente');
+                console.log('Chat Cita Previa INSS inicializado correctamente');
             } catch (err) {
                 console.error('Error loading Embedded Messaging: ', err);
             }
         };
     </script>
-    <script type='text/javascript' src='https://segsocial--datacloud.sandbox.my.site.com/ESWGISSCHATV21750935468760/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+    <script type='text/javascript' src='https://segsocial--devpro.sandbox.my.salesforce-scrt.com/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
